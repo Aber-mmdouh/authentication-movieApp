@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="movie.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+
+    <header>
+      <form id="form">
+        <input type="text" (change)="submit(searchinput.value)" #searchinput id="search" class="search" placeholder="Search">
+      </form>
+    </header>
+    <main id="main">
+      @for(movie of movies(); track $index){
+<div class="movie">
+        <img [src]=" IMG_PATH+ movie.poster_path" alt="{{ movie.title }}">
+        <div class="movie-info">
+          <h3>{{ movie.title }}</h3>
+          <span [ngClass]="{'green': movie.vote_average >= 8, 'orange': movie.vote_average <8 && movie.vote_average >= 5, 'red': movie.vote_average < 5}">{{movie.vote_average}}</span>
+        <div class="overview">{{ movie.overview }}</div>
+        </div>
+      </div>
+      }
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

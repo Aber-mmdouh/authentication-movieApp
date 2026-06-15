@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <form (ngSubmit)="onsubmit(logForm)" #logForm="ngForm">
+      <div class="form-group">
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" class="form-control"   name="email"
+        [(ngModel)]="email"
+        required
+        email/>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control"
+        name="password"
+        [(ngModel)]="password"
+        required
+        minlength="4"
+        />
+      </div>
+      <div>
+        <button class="btn btn-primary" [disabled]="logForm.invalid">{{isLogginMode ?'Log in':'Sign Up'}}</button> |
+        <button class="btn btn-primary"(click)="switchmode()" type="button">Switch to {{isLogginMode ?'Sign Up':'Log in'}}</button>
+      </div>
+    </form>
+    @if(error()){
+<div class="alert alert-danger">
+      <p>{{error()}}</p>
+    </div>
+    }
+
+  </div>
+</div>
+
