@@ -2,6 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
 
+<img width="1366" height="641" alt="2026-06-22" src="https://github.com/user-attachments/assets/63cf3ed7-d6ec-4768-89f5-1a84a26ba5cf" />
+<img width="1366" height="654" alt="2026-06-22 (3)" src="https://github.com/user-attachments/assets/17bd90e0-a0c7-4dc8-a967-2c6efbd92103" />
+<img width="1366" height="661" alt="2026-06-22 (1)" src="https://github.com/user-attachments/assets/b134afc2-b72d-4104-98c7-afbb6c24f0e6" />
+<img width="1366" height="641" alt="2026-06-22 (2)" src="https://github.com/user-attachments/assets/dff205be-7c21-463e-a024-ee67fcea122c" />
+
 ## Development server
 
 To start a local development server, run:
@@ -15,6 +20,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+  
 
 ```bash
 ng generate component component-name
